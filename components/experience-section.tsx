@@ -4,19 +4,29 @@ import { Badge } from "@/components/ui/badge"
 const experiences = [
   {
     id: 1,
+    title: "Estagiária de Suporte para HelpDesk",
+    company: "Prefeitura de Itanhaém",
+    period: "2022 - 2024",
+    description:
+      "Suporte aos servidores públicos da prefeitura de Itanhaém.",
+    technologies: ["Redes", "Mapeamento de impressoras", "Windows", "Resolução de problemas"],
+  },
+  {
+    id: 2,
     title: "Analista de Suporte Técnico para TELECOM",
     company: "WSNET TELECOM",
     period: "2024 - Presente",
     description:
-      "Suporte ágil e resolutivo a clientes e técnicos em operações de campo.",
+      "Suporte N1, N2, ágil e resolutivo a clientes e técnicos em operações de campo.",
     technologies: ["Redes", "Protocolos", "Utilitários", "Resolução de problemas", "Autenticação"],
   },
   {
+    id: 3,
     title: "Freelancer",
     company: "Projetos Pessoais",
-    period: "2022 - Atualmente",
+    period: "Periodicamente",
     description:
-      "Desenvolvimento de pequenas aplicações web e soluções técnicas para clientes locais. Foco em soluções simples e eficientes.",
+      "Desenvolvimento de pequenas aplicações web e soluções técnicas para clientes locais.",
     technologies: ["Node.js", "Postgres", "Next.JS", "CSS", "Configuração de equipamentos", "JavaScript", "Canvas"],
   },
 ]
@@ -39,7 +49,7 @@ export function ExperienceSection() {
             <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-border transform -translate-y-1/2"></div>
             <div className="md:hidden absolute left-6 top-0 bottom-0 w-0.5 bg-border"></div>
 
-            <div className="space-y-8 md:space-y-0 md:flex md:justify-around md:items-center">
+            <div className="space-y-8 gap-5 md:space-y-0 md:flex md:justify-around md:items-center">
               {experiences.map((exp, index) => (
                 <div key={exp.id} className="relative md:w-80">
                   {/* Ponto da timeline */}
