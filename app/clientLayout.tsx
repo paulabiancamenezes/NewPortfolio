@@ -1,28 +1,27 @@
+"use client"
+
 import type React from "react"
-import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
-import { ClientLayout } from "@/components/client-layout"
+import { ThemeProvider } from "@/components/theme-provider"
+import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
-import "./globals.css"
 
-export const metadata: Metadata = {
-  title: "Portfólio - Desenvolvedora Back-end",
-  description: "Portfólio profissional de uma desenvolvedora back-end junior especializada em Node.js",
-  generator: "v0.app",
-}
-
-export default function RootLayout({
+export default function ClientLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const searchParams = useSearchParams()
+
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
         <Suspense fallback={<div>Loading...</div>}>
-          <ClientLayout>{children}</ClientLayout>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+          </ThemeProvider>
         </Suspense>
         <Analytics />
       </body>
