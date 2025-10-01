@@ -1,4 +1,5 @@
-Portfólio Pessoal
+<h1>Portfólio Pessoal</h1>
+
 Este é o repositório do meu portfólio pessoal, uma aplicação web moderna e responsiva construída para apresentar minhas habilidades, projetos e experiências como Desenvolvedora Back-end.
 
 O projeto foi desenvolvido com as tecnologias mais recentes do ecossistema React, incluindo Next.js para renderização otimizada, TypeScript para segurança de tipos e Tailwind CSS com shadcn/ui para uma interface elegante e consistente.
