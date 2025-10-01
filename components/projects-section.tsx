@@ -26,6 +26,17 @@ const projects = [
     liveUrl: "#",
     featured: false,
   },
+  {
+    id: 3,
+    title: "API de Upload e Listagem de Arquivos",
+    subtitle:"Finalizado",
+    description: "API simples para upload e listagem de arquivos, futuramente podendo ser listado pelo nome.",
+    image: "/settings.jpg",
+    technologies: ["Node.js", "fs / path", "Multer", "Express", "TypeScript" ],
+    githubUrl: "https://github.com/paulabiancamenezes/UploadVideosAPI",
+    liveUrl: "#",
+    featured: false,
+  }
 ]
 
 export function ProjectsSection() {
