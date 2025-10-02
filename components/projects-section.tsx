@@ -28,9 +28,9 @@ const projects = [
   },
   {
     id: 3,
-    title: "API de Upload e Listagem de Arquivos",
+    title: "API de Upload e Download de Arquivos",
     subtitle:"Finalizado",
-    description: "API simples para upload e listagem de arquivos, futuramente podendo ser listado pelo nome.",
+    description: "API simples para upload, download e listagem de arquivos.",
     image: "/settings.jpg",
     technologies: ["Node.js", "fs / path", "Multer", "Express", "TypeScript" ],
     githubUrl: "https://github.com/paulabiancamenezes/UploadVideosAPI",
